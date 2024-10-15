@@ -5,7 +5,7 @@ public class CharacterFactory {
     private Map<String, Character> characterPool = new HashMap<>();
 
     public Character getCharacter(char value, String font, int size) {
-        String key = value + font + size;  // Unique key for each character state
+        String key = value + font + size;
 
         if (!characterPool.containsKey(key)) {
             characterPool.put(key, new Character(value, font, size));

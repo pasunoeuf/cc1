@@ -9,7 +9,7 @@ public class RealVideoLecture implements VideoLecture {
     private void loadVideo() {
         System.out.println("Loading video: " + title + "...");
         try {
-            Thread.sleep(2000);  // Simulate loading time
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

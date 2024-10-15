@@ -9,7 +9,7 @@ public class TextEditor {
         this.characterFactory = factory;
     }
 
-    // Represents a character with its position (extrinsic state)
+
     private class RenderedCharacter {
         Character character;
         int x, y;
@@ -26,7 +26,7 @@ public class TextEditor {
         for (char c : text.toCharArray()) {
             Character character = characterFactory.getCharacter(c, font, size);
             renderedCharacters.add(new RenderedCharacter(character, x, y));
-            x += 10;  // Move x-coordinate for the next character
+            x += 10;
         }
     }
 

@@ -14,7 +14,7 @@ public class ProxyVideoLecture implements VideoLecture {
     @Override
     public void play() {
         if (realVideoLecture == null) {
-            realVideoLecture = new RealVideoLecture(title);  // Lazy loading
+            realVideoLecture = new RealVideoLecture(title);
         }
         realVideoLecture.play();
     }
