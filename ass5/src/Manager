@@ -1,0 +1,10 @@
+public class Manager extends Approver {
+    @Override
+    public void approveRequest(ExpenseRequest request) {
+        if (request.getAmount() <= 2000) {
+            System.out.println("Manager approved the expense: " + request.getPurpose());
+        } else if (nextApprover != null) {
+            nextApprover.approveRequest(request);
+        }
+    }
+}
